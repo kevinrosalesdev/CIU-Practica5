@@ -1,5 +1,6 @@
 import queasycam.*;
 import processing.sound.*;
+//import gifAnimation.*;
 
 PShape room, floor, flashlight, child;
 SoundFile leftFootEffect, rightFootEffect, sinisterChildLaughingEffect, scarySoundEffect, electricityEffect;
@@ -8,6 +9,9 @@ boolean isMenu = true;
 boolean increase = true;
 float blink = 0.0;
 PFont font;
+
+//GifMaker ficherogif;
+//int frameCounter;
 
 void setup(){
   fullScreen(P3D, 1);
@@ -23,9 +27,20 @@ void setup(){
   setRoom();
   setFlashlight();
   setChild();
+  
+  //ficherogif = new GifMaker(this, "animation.gif");
+  //ficherogif.setRepeat(0);
+  //ficherogif.addFrame();
+  //frameCounter = 0;
 }
 
 void draw(){
+  //frameCounter++;
+  //if(frameCounter == 10){
+  //  ficherogif.addFrame();
+  //  frameCounter = 0;
+  //}
+  
   background(5);
   translate(0,0,0);
   controller.updateLights();

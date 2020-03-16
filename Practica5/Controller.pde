@@ -89,9 +89,9 @@ class Controller{
       childModelTranslateZ = random(-60,326);
       childModelRotateY = random(0,PI);
       childModel = 0;
-    }else if ((int)random(0,5000) == 1){
+    }else if ((int)random(0,3000) == 0){
       thread("scarySoundEffect");
-    }else if ((int)random(0,2500) == 2){
+    }else if ((int)random(0,1500) == 0){
       thread("electricityEffect");
       flashlight = 0;
     }  
